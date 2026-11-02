@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="patient.css" />
   </head>
-  <body>
-    <h1>Patient Registration Form</h1>
-    <p>Please fill in the details below to register.</p>
 
-    <form action="/" method="post">
-      <h2>Personal Information</h2>
-      <label for="fullname">Full Name:</label>
+  <body id="page" class="form-page">
+    <h1 id="form-title" class="main-title">Patient Registration Form</h1>
+    <p class="form-subtitle">Please fill in the details below to register.</p>
+
+    <form id="patient-form" class="registration-form" action="/" method="post">
+      <h2 class="section-title">Personal Information</h2>
+
+      <label class="form-label" for="fullname">Full Name:</label>
       <input
+        class="form-input"
         type="text"
         id="fullname"
         placeholder="Enter your full name"
@@ -20,24 +24,38 @@
       />
       &nbsp;&nbsp;
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" required />
+      <label class="form-label" for="dob">Date of Birth:</label>
+      <input class="form-input" type="date" id="dob" required />
       &nbsp;&nbsp;
 
-      <label for="gender">Gender:</label>
-      <input type="radio" id="male" name="gender" value="Male" required />
+      <label class="form-label" for="gender">Gender:</label>
+      <input
+        class="radio-input"
+        type="radio"
+        id="male"
+        name="gender"
+        value="Male"
+        required
+      />
       <label for="male">Male</label>
 
-      <input type="radio" id="female" name="gender" value="Female" />
+      <input
+        class="radio-input"
+        type="radio"
+        id="female"
+        name="gender"
+        value="Female"
+      />
       <label for="female">Female</label>
 
       &nbsp;&nbsp;
       <br /><br />
-      <hr />
 
-      <h2>Contact Information</h2>
-      <label for="email">Email:</label>
+      <h2 class="section-title">Contact Information</h2>
+
+      <label class="form-label" for="email">Email:</label>
       <input
+        class="form-input"
         type="email"
         id="email"
         placeholder="yourname@gmail.com"
@@ -45,8 +63,9 @@
       />
       &nbsp;&nbsp;
 
-      <label for="phone">Phone Number:</label>
+      <label class="form-label" for="phone">Phone Number:</label>
       <input
+        class="form-input"
         type="tel"
         id="phone"
         placeholder="Enter phone number"
@@ -57,8 +76,9 @@
       &nbsp;&nbsp;
       <br /><br />
 
-      <label for="address">Address:</label>
+      <label class="form-label" for="address">Address:</label>
       <textarea
+        class="form-textarea"
         id="address"
         rows="3"
         cols="30"
@@ -67,16 +87,16 @@
       ></textarea>
       &nbsp;&nbsp;
       <br /><br />
-      <hr />
 
-      <h2>Emergency Contact</h2>
+      <h2 class="section-title">Emergency Contact</h2>
 
-      <label for="emergencyname">Contact Person Name:</label>
-      <input type="text" id="emergencyname" required />
+      <label class="form-label" for="emergencyname">Contact Person Name:</label>
+      <input class="form-input" type="text" id="emergencyname" required />
       &nbsp;&nbsp;
 
-      <label for="emgphone">Emergency Phone:</label>
+      <label class="form-label" for="emgphone">Emergency Phone:</label>
       <input
+        class="form-input"
         type="tel"
         id="emgphone"
         pattern="[0-9]{10}"
@@ -85,8 +105,8 @@
       />
       &nbsp;&nbsp;
 
-      <label for="relationship">Relationship:</label>
-      <select id="relationship" required>
+      <label class="form-label" for="relationship">Relationship:</label>
+      <select class="form-select" id="relationship" required>
         <option value="">Select Relationship</option>
         <option value="Parent">Parent</option>
         <option value="Friend">Friend</option>
@@ -94,12 +114,11 @@
 
       &nbsp;&nbsp;
       <br /><br />
-      <hr />
 
-      <h2>Medical Information</h2>
+      <h2 class="section-title">Medical Information</h2>
 
-      <label for="reason">Select Reason:</label>
-      <select id="reason" required>
+      <label class="form-label" for="reason">Select Reason:</label>
+      <select class="form-select" id="reason" required>
         <option value="">Select Reason</option>
         <option value="General Checkup">General Checkup</option>
         <option value="Injury">Injury</option>
@@ -107,8 +126,11 @@
       </select>
       &nbsp;&nbsp;
 
-      <label for="description">Describe Your Symptoms:</label>
+      <label class="form-label" for="description"
+        >Describe Your Symptoms:</label
+      >
       <textarea
+        class="form-textarea"
         id="description"
         rows="4"
         cols="30"
@@ -116,12 +138,19 @@
       ></textarea>
       &nbsp;&nbsp;
       <br /><br />
-      <input type="checkbox" id="terms" value="accepted" required />
+
+      <input
+        class="checkbox-input"
+        type="checkbox"
+        id="terms"
+        value="accepted"
+        required
+      />
       <label for="terms"> I agree to T&C. </label>
       <br /><br />
 
-      <button type="submit">Register Patient</button>
-      <button type="reset">Reset Form</button>
+      <button class="submit-btn" type="submit">Register Patient</button>
+      <button class="reset-btn" type="reset">Reset Form</button>
     </form>
   </body>
 </html>

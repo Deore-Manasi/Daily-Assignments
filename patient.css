@@ -1,0 +1,167 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+.form-page {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  color: #334155;
+  padding: 30px 15px;
+  line-height: 1.6;
+}
+
+/* Main Title */
+.main-title {
+  text-align: center;
+  color: #041e87;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.form-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* Registration Form */
+.registration-form {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Titles */
+.section-title {
+  color: #041e87;
+  font-size: 25px;
+  margin: 20px 0 15px;
+
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7388ddd0;
+}
+
+/* Labels */
+.form-label {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4b5463;
+}
+
+/* Text, Date, Email and Phone Inputs */
+.form-input {
+  padding: 10px 12px;
+  margin: 5px 0 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 5px rgba(2, 132, 199, 0.3);
+}
+
+/* Textarea */
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: middle;
+  outline: none;
+  resize: vertical;
+}
+
+/* Select */
+.form-select {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Radio and Checkbox */
+.radio-input,
+.checkbox-input {
+  accent-color: #0284c7;
+  cursor: pointer;
+  margin: 8px;
+}
+
+/* Common Button Styling */
+.registration-form button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #0284c7;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+/* Reset Button */
+.reset-btn {
+  background-color: #e2e8f0;
+  color: #334155;
+  margin-left: 10px;
+}
+
+.reset-btn:hover {
+  background-color: #cbd5e1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    display: block;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .registration-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
