@@ -6,7 +6,7 @@ form.addEventListener("submit", (event) => {
 
   const username = document.getElementById("username").value.trim();
   const appointmentDate = document.getElementById("appdate").value;
-
+  //date formatting
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const selectedDate = new Date(appointmentDate + "T00:00:00");
