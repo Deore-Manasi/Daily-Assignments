@@ -11,7 +11,13 @@
     <h1 id="form-title" class="main-title">Patient Registration Form</h1>
     <p class="form-subtitle">Please fill in the details below to register.</p>
 
-    <form id="patient-form" class="registration-form" action="/" method="post">
+    <form
+      id="patient-form"
+      class="registration-form"
+      action="/"
+      method="post"
+      novalidate
+    >
       <h2 class="section-title">Personal Information</h2>
 
       <label class="form-label" for="fullname">Full Name:</label>
@@ -152,5 +158,6 @@
       <button class="submit-btn" type="submit">Register Patient</button>
       <button class="reset-btn" type="reset">Reset Form</button>
     </form>
+    <script src="patient.js"></script>
   </body>
 </html>
