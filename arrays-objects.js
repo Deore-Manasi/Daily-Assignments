@@ -152,7 +152,7 @@ console.log(mergedArray);
 
 //Create a function that accepts any number of patient names using rest parameters and returns them as an array.
 
-function getName(...firstname) {
+function getName(a, ...firstname) {
   return firstname;
 }
 console.log("Output of Rest operator:");
