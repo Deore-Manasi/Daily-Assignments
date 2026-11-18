@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Data Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Patient Data Dashboard</h1>
+        <p>Manage and view patient information</p>
+      </header>
+
+      <section class="controls">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search users by name..."
+        />
+
+        <button id="reloadBtn">Reload Data</button>
+      </section>
+
+      <p id="statusMessage">Loading users...</p>
+
+      <div class="users-container" id="usersContainer">
+        <!-- cards added here -->
+      </div>
+    </div>
+
+    <script type="module" src="dist/index.js"></script>
+  </body>
+</html>
