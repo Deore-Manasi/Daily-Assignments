@@ -210,6 +210,19 @@ function startEdit(id: number): void {
   if (btn) btn.textContent = "Update Patient";
 }
 
+const searchInput = document.getElementById(
+  "searchInput",
+) as HTMLInputElement | null;
+
+searchInput?.addEventListener("input", function () {
+  const searchValue = searchInput.value.toLowerCase().trim();
+  const filteredPatients: Patient[] = Allpatients.filter((p) => {
+    return p.name.toLowerCase().includes(searchValue);
+  });
+
+  displayPatients(filteredPatients);
+});
+
 // const saved = localStorage.getItem("patients");
 // if (saved) {
 //   Allpatients.splice(0, Allpatients.length, ...JSON.parse(saved));
