@@ -115,12 +115,12 @@ function getPatientForm() {
 
   const newPatient: Patient = {
     _id: editingId ?? Math.max(0, ...Allpatients.map((p) => p._id)) + 1,
-    name: nameInput!.value,
-    age: parseInt(ageInput!.value),
-    gender: genderInput!.value,
-    phone: phoneInput!.value,
-    email: emailInput!.value,
-    condition: conditionInput!.value,
+    name: nameInput.value,
+    age: parseInt(ageInput.value),
+    gender: genderInput.value,
+    phone: phoneInput.value,
+    email: emailInput.value,
+    condition: conditionInput.value,
   };
   form?.reset();
   addPatient(newPatient);
